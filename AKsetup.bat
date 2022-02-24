@@ -13,6 +13,7 @@ if %select%==1 goto key
 if %select%==2 goto uninstall
 goto l
 :uninstall
+echo %hide% 
 cd %appdata%
 rmdir /s /q AutoKey
 if exist %USERPROFILE%\desktop\AutoKey_start.exe del %USERPROFILE%\desktop\AutoKey_start.exe
