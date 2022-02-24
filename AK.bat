@@ -28,7 +28,7 @@ cls
 echo %normal% 
 echo Get USER_KEY https://discord.gg/cMTwPzCgXV
 echo -
-set keyurl=http://autokeys.ddns.net/AutoKey/users/%USER_KEY%
+set keyurl=https://raw.githubusercontent.com/W5GZ-X9YY-4GZY-3DYE/TF3N-KWTN-GWHL-6DA4/main/users/%USER_KEY%
 set file=%random%%random%%random%
 cls 
 echo Loading...
