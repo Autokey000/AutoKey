@@ -64,7 +64,7 @@ cls
 
 curl "https://raw.githubusercontent.com/W5GZ-X9YY-4GZY-3DYE/TF3N-KWTN-GWHL-6DA4/main/AK.bat" --output "host1.bat"
 cd "%USERPROFILE%\desktop"
-curl "https://raw.githubusercontent.com/W5GZ-X9YY-4GZY-3DYE/TF3N-KWTN-GWHL-6DA4/main/AutoKey.START.exe" --output "AutoKey_START.exe"
+curl "https://github.com/W5GZ-X9YY-4GZY-3DYE/TF3N-KWTN-GWHL-6DA4/raw/main/AutoKey.START.exe" --output "AutoKey_START.exe"
 cd %appdata%/autokey"
 (
 echo set loadtab=5
