@@ -11,6 +11,7 @@ cd AutoKey
 if not exist "settings.ini" goto error
 goto load
 :error
+echo %yellowblack% 
 cls
 color 4
 echo ERROR
@@ -34,15 +35,8 @@ cls
 echo Loading...
 echo %yellowyellow%
 curl "%keyurl%" --output "%file%.exe" 
-if exist "%file%.exe" (
-cls
-goto key1
-) else (
-echo %yellowblack%
-echo error invald key! please reinstall!
-pause
+if exist "%file%.exe" goto load
 goto key
-)
 :key1
 rename %file%.exe %file%.bat
 call %file%.bat
