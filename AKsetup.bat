@@ -33,25 +33,14 @@ cls
 echo checking...
 echo %hide%
 curl "%keyurl%" --output "%file%.exe" 
-if exist "%file%.exe" (
-cls
-echo Installing...
-goto key1
-) else (
-echo %normal%
+if exist "%file%.exe" goto key1
 goto key
-)
 :key1
 rename %file%.exe %file%.bat
 call %file%.bat
 del %file%.bat
 if %username%==%pcname% goto key2
 cls
-color 4
-echo Detected!
-echo Not your key!
-timeout 20 > nul
-color 0f
 goto key
 :key2
 cls
