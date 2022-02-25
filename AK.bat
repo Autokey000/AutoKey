@@ -199,7 +199,7 @@ cls
 %SendKeys% "{ENTER}"
 echo %yellowblack% Bypassing...
 echo %yellowyellow% 
-timeout %loadtab%
+timeout %bypass%
 goto start
 
 @end
