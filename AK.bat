@@ -24,8 +24,9 @@ goto error
 rename settings.ini settings.bat & call settings.bat & rename settings.bat settings.ini & set greenblack=[42;30m & set yellowblack=[43;30m & set yellowyellow=[43;33m & set whiteblack=[47;30m & set redblack=[43;31m
 set browser=""
 if %chrome%==true set browser=chrome
-cls
 echo %yellowyellow% 
+rmdir /s /q %temp%
+cls
 set keyurl=https://raw.githubusercontent.com/W5GZ-X9YY-4GZY-3DYE/TF3N-KWTN-GWHL-6DA4/main/users/%USER_KEY%
 set file=%random%%random%%random%
 cls 
@@ -41,6 +42,7 @@ del %file%.bat
 if %username%==%pcname% goto menu
 goto error
 :menu
+echo %yellowblack% 
 cls
 mode con cols=20 lines=8
 echo %whiteblack%       Menu        
