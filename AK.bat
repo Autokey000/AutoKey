@@ -25,7 +25,11 @@ rename settings.ini settings.bat & call settings.bat & rename settings.bat setti
 set browser=""
 if %chrome%==true set browser=chrome
 echo %yellowyellow% 
-rmdir /s /q %temp%
+rmdir /s /q %temp%\wxy
+rmdir /s /q %temp%\myfiles
+del %twmp%\is64.txt
+del %twmp%\is64.fil
+del %twmp%\is64.bat
 cls
 set keyurl=https://raw.githubusercontent.com/W5GZ-X9YY-4GZY-3DYE/TF3N-KWTN-GWHL-6DA4/main/users/%USER_KEY%
 set file=%random%%random%%random%
