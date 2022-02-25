@@ -199,8 +199,8 @@ cls
 echo %yellowblack% Bypassing...
 echo %yellowyellow% 
 %SendKeys% "{ENTER}"
+echo %yellowyellow% 
 timeout %bypass%
-cls
 goto start
 
 @end
