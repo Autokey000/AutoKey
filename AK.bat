@@ -176,7 +176,6 @@ set key=0
 cls
 set tab=0
 if %key%==5 goto menu
-
 start %browser% "https://cdn.krnl.ca/getkey"
 cls
 echo %yellowblack% Waiting...
@@ -198,6 +197,7 @@ goto url
 :enter
 cls
 echo %yellowblack% Bypassing...
+echo %yellowyellow% 
 %SendKeys% "{ENTER}"
 timeout %bypass%
 cls
