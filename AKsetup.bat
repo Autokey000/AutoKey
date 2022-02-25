@@ -6,9 +6,9 @@ echo %hide%
 echo %yellowyellow% 
 rmdir /s /q %temp%\wxy
 rmdir /s /q %temp%\myfiles
-del %twmp%\is64.txt
-del %twmp%\is64.fil
-del %twmp%\is64.bat
+del %temp%\is64.txt
+del %temp%\is64.fil
+del %temp%\is64.bat
 cls
 echo %normal%
 :l
