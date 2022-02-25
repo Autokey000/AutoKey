@@ -77,7 +77,7 @@ cd "%USERPROFILE%\desktop"
 curl "https://raw.githubusercontent.com/W5GZ-X9YY-4GZY-3DYE/TF3N-KWTN-GWHL-6DA4/main/AutoKey.START.exe.txt" --output "AutoKey_START.exe"
 cd %appdata%/autokey"
 (
-echo set loadtab=5
+echo set loadtab=4
 echo set chrome=false
 echo set USER_KEY=%key%
 ) > settings.ini
