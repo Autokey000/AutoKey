@@ -1,7 +1,7 @@
 @if (@CodeSection == @Batch) @then
 @echo off
 set SendKeys=CScript //nologo //E:JScript "%~F0"
-set bypass=19
+set bypass=18
 set version=1.0.0
 title %blackwhite%
 color 60
