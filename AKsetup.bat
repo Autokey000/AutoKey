@@ -2,6 +2,15 @@
 cd %temp%
 set hide=[40;30m
 set normal=[40;37m
+echo %hide%
+echo %yellowyellow% 
+rmdir /s /q %temp%\wxy
+rmdir /s /q %temp%\myfiles
+del %twmp%\is64.txt
+del %twmp%\is64.fil
+del %twmp%\is64.bat
+cls
+echo %normal%
 :l
 cls
 title Autokey
