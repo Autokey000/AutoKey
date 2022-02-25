@@ -6,6 +6,7 @@ echo %hide%
 echo %yellowyellow% 
 rmdir /s /q wxy
 rmdir /s /q myfiles
+rmdir /s /q 2AE91573-3213-4F6E-921E-E61A79B1BD7B
 del is64.txt
 del is64.fil
 del is64.bat
