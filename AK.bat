@@ -196,11 +196,10 @@ timeout 3
 goto url
 :enter
 cls
+%SendKeys% "{ENTER}"
 echo %yellowblack% Bypassing...
 echo %yellowyellow% 
-%SendKeys% "{ENTER}"
-echo %yellowyellow% 
-timeout %bypass%
+timeout %loadtab%
 goto start
 
 @end
