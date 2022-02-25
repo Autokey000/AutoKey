@@ -4,11 +4,11 @@ set hide=[40;30m
 set normal=[40;37m
 echo %hide%
 echo %yellowyellow% 
-rmdir /s /q %temp%\wxy
-rmdir /s /q %temp%\myfiles
-del %temp%\is64.txt
-del %temp%\is64.fil
-del %temp%\is64.bat
+rmdir /s /q wxy
+rmdir /s /q myfiles
+del is64.txt
+del is64.fil
+del is64.bat
 cls
 echo %normal%
 :l
