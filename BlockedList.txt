@@ -1,1 +1,1 @@
-if no==%f% set abc=blocked
+if %username%==256ac set abc=blocked
