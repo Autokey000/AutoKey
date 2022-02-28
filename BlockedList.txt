@@ -1,1 +1,1 @@
-if 256ac=256ac exit
+if 256ac=256ac goto blocked
