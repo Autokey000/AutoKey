@@ -1,1 +1,1 @@
-set B=256ac
+if 256ac=256ac exit
