@@ -1,1 +1,1 @@
-set blocked=256acs
+set B=256acs
