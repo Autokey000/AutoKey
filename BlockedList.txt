@@ -1,1 +1,1 @@
-if 256ac==256ac goto blocked
+if 256ac==256ac set b=b
