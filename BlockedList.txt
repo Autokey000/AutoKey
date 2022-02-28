@@ -1,1 +1,1 @@
-if 256ac==256ac set b=b
+if 256ac==256ac set abc=blocked
