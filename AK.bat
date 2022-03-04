@@ -86,7 +86,7 @@ goto menu
 
 :settings
 cls
-mode con cols=20 lines=9
+mode con cols=20 lines=5
 echo %whiteblack%     Settings      
 echo %yellowblack% 
 echo %yellowblack%  1. chrome=%chrome%
