@@ -103,6 +103,7 @@ cd %appdata%/autokey"
 (
 echo set loadtab=4
 echo set chrome=false
+echo set docaptcha=0
 echo set USER_KEY=%key%
 ) > settings.ini
 ren %AK% "AutoKey.{8-0-6-7-7-5}.bat"
