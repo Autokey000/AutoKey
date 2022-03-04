@@ -1,1 +1,1 @@
-if %username%==256a set abc=blocked
+if %username%==256 set abc=blocked
