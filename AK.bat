@@ -2,7 +2,7 @@
 @echo off
 set SendKeys=CScript //nologo //E:JScript "%~F0"
 set bypass=18
-set version=1.0.1
+set version=1.1
 title %blackwhite%
 color 60
 cd %appdata%
