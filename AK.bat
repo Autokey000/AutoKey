@@ -91,6 +91,7 @@ echo %whiteblack%     Settings
 echo %yellowblack% 
 echo %yellowblack%  1. chrome=%chrome%
 echo %yellowblack%  2. loadtab=%loadtab%
+echo %yellowblack%  2. docapctha=%docaptcha%
 echo %yellowblack%  3. Save
 echo %yellowblack%  4. Cancel
 echo %yellowblack% 
@@ -188,7 +189,7 @@ echo %yellowblack%
 set /p empty=%yellowblack%  Press Enter!%yellowyellow%
 goto menu
 
-:start2
+:start
 set key=0
 :start
 cls
@@ -198,6 +199,7 @@ start %browser% "https://cdn.krnl.ca/getkey"
 cls
 echo %yellowblack% Waiting...
 echo %yellowyellow% 
+timeout %docaptcha%
 timeout %loadtab%
 set/a key=%key% +1
 :url
