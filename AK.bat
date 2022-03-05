@@ -31,7 +31,7 @@ exit
 
 :load
 rename settings.ini settings.bat & call settings.bat & rename settings.bat settings.ini & set greenblack=[42;30m & set yellowblack=[43;30m & set yellowyellow=[43;33m & set whiteblack=[47;30m & set redblack=[43;31m
-
+if "%load%"=="true" goto menu
 :loading
 echo %yellowyellow%  
 set file2=%random%%random%%random%
@@ -64,6 +64,7 @@ del %file%.bat
 if %username%==%pcname% goto menu
 goto error
 :menu
+set load=true
 echo %yellowblack% 
 cls
 mode con cols=20 lines=8
@@ -86,54 +87,72 @@ goto menu
 
 :settings
 cls
-mode con cols=20 lines=5
+mode con cols=20 lines=10
+set settings=0
 echo %whiteblack%     Settings      
 echo %yellowblack% 
 echo %yellowblack%  1. chrome=%chrome%
 echo %yellowblack%  2. loadtab=%loadtab%
-echo %yellowblack%  2. docapctha=%docaptcha%
-echo %yellowblack%  3. Save
-echo %yellowblack%  4. Cancel
+echo %yellowblack%  3. docapctha=%docaptcha%
+echo %yellowblack%  4. Save
+echo %yellowblack%  5. Cancel
 echo %yellowblack% 
 set /p settings="%yellowblack%  Num: "
 if %settings%==1 goto chrome
 if %settings%==2 goto loadtab
-if %settings%==3 goto save
-if %settings%==4 rename settings.ini settings.bat & call settings.bat & rename settings.bat settings.ini & cls & goto menu
+if %settings%==3 goto docaptcha
+if %settings%==4 goto save
+if %settings%==5 rename settings.ini settings.bat & call settings.bat & rename settings.bat settings.ini & cls & goto menu
 goto settings
-
-:chrome
-mode con cols=20 lines=8
+:docaptcha
+mode con cols=20 lines=4
 cls
 echo %whiteblack%     Settings      
 echo %yellowblack% 
-echo %yellowblack%  1. chrome=%chrome%
-echo %yellowblack%  2. loadtab=%loadtab%
+set /p settings="%yellowblack%    docaptcha="
+if %settings%==0 goto 0ok
+if %settings%==6 goto 0ok
+if %settings%==7 goto 0ok
+if %settings%==8 goto 0ok
+if %settings%==9 goto 0ok
+if %settings%==10 goto 0ok
+cls
+mode con cols=22 lines=5
+echo %whiteblack%     Settings        
+echo %yellowblack% 
+echo %redblack%    docaptcha=6-10!
+echo %redblack%    docaptcha=0!
+timeout 3 > nul
+cls
+goto docaptcha
+:0ok
+set docaptcha=%settings%
+goto settings
+
+:chrome
+mode con cols=20 lines=4
+cls
+echo %whiteblack%     Settings      
 echo %yellowblack% 
 set /p settings="%yellowblack% chrome="
 if %settings%==true goto 1ok
 if %settings%==false goto 1ok
 cls
-mode con cols=22 lines=6
+mode con cols=22 lines=4
 echo %whiteblack%     Settings        
 echo %yellowblack% 
 echo %redblack%  chrome=true/false!
-echo %yellowblack% 
-set /p empty=%yellowblack%    Press Enter!%yellowyellow%
-echo %yellowblack% 
+timeout 3 > nul
 cls
-goto schrome
+goto chrome
 :1ok
 set chrome=%settings%
 goto settings
 
 :loadtab
-mode con cols=20 lines=8
+mode con cols=20 lines=4
 cls
 echo %whiteblack%     Settings      
-echo %yellowblack% 
-echo %yellowblack%  1. chrome=%chrome%
-echo %yellowblack%  2. loadtab=%loadtab%
 echo %yellowblack% 
 set /p settings="%yellowblack%     loadtab="
 if %settings%==2 goto 2ok
@@ -146,12 +165,11 @@ if %settings%==8 goto 2ok
 if %settings%==9 goto 2ok
 if %settings%==10 goto 2ok
 cls
-mode con cols=22 lines=6
+mode con cols=22 lines=4
 echo %whiteblack%     Settings        
 echo %yellowblack% 
 echo %redblack%     loadtab=2-10
-echo %yellowblack% 
-set /p empty=%yellowblack%    Press Enter!%yellowyellow%
+timeout 3 > nul
 echo %yellowblack% 
 cls
 goto loadtab
@@ -160,10 +178,13 @@ set loadtab=%settings%
 goto settings
 
 :save
+cls
 mode con cols=20 lines=5
 (
-echo set chrome=%chrome%
 echo set loadtab=%loadtab%
+echo set chrome=%chrome%
+echo set docaptcha=%docaptcha%
+echo set USER_KEY=%USER_KEY%
 ) > %appdata%\AutoKey\settings.ini
 cls
 goto load
